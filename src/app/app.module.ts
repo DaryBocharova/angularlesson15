@@ -1,24 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FirstRowModule } from './modules/first-row/first-row.module';
-import { SeconfRowModule } from './modules/seconf-row/seconf-row.module';
-import { ThirdRowModule } from './modules/third-row/third-row.module';
-import { FourthRowModule } from './modules/fourth-row/fourth-row.module';
-import { FifthRowModule } from './modules/fifth-row/fifth-row.module';
 
 import { AppComponent } from './app.component';
+import { OneComponent } from './module/oneRow/one/one.component';
+import { OneModule } from './module/oneRow/one.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OneComponent
   ],
   imports: [
     BrowserModule,
-    FirstRowModule,
-    SeconfRowModule,
-    ThirdRowModule,
-    FourthRowModule,
-    FifthRowModule
+    OneModule
   ],
   providers: [],
   bootstrap: [AppComponent]
