@@ -5,6 +5,8 @@ import { TwoModule} from './twoRow/two.module';
 
 @NgModule({
   declarations: [OneComponent],
+  exports:[
+    OneComponent],
   imports: [
     CommonModule,
     TwoModule
